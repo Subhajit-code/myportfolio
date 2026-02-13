@@ -12,7 +12,7 @@ const Heropage = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center py-12 sm:py-16 px-4 sm:px-8 md:px-16 lg:px-24 overflow-hidden"
+      className="relative min-h-screen flex items-center py-12 sm:py-16 px-4 sm:px-8 md:px-16 lg:px-24 overflow-x-hidden"
     >
       {/* Particles Background */}
       <div className="absolute inset-0 z-0 w-full h-full">
@@ -83,26 +83,15 @@ const Heropage = () => {
         </div>
 
         {/* Profile Image */}
-        <div className="flex-1 flex justify-center md:justify-end mt-6 sm:mt-8 md:mt-0">
-          <div className="relative">
-            <div className="relative w-104 h-94 sm:w-86 sm:h-86 md:w-74 md:h-74 lg:w-102 lg:h-102 overflow-hidden transition-all duration-300 rounded-2xl">
-              <div className="w-full h-full flex items-center justify-center text-slate-600">
-                <svg
-                  className="w-16 h-16 sm:w-20 sm:h-20"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                </svg>
-              </div>
-
-              {/* profile image */}
+        <div className="flex-1 flex justify-center md:justify-end mt-6 sm:mt-8 md:mt-0 w-full">
+          <div className="relative max-w-full">
+            <div className="relative w-[92vw] max-w-[26rem] aspect-square sm:w-86 md:w-74 lg:w-102 overflow-hidden transition-all duration-300 rounded-2xl">
               <Image
                 src={myprofile}
                 alt="Ankit"
-                layout="fill"
-                objectFit="cover"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                priority
               />
             </div>
           </div>
