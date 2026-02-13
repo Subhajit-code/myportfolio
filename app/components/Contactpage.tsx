@@ -12,7 +12,7 @@ const socialLinks = [
     url: "https://github.com/Subhajit-code",
     icon: (
       <svg
-        className="w-6 h-6 sm:w-8 sm:h-8"
+        className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
         fill="currentColor"
         viewBox="0 0 24 24"
       >
@@ -27,7 +27,7 @@ const socialLinks = [
       "https://www.linkedin.com/in/subhajit-banerjee-14b481269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     icon: (
       <svg
-        className="w-6 h-6 sm:w-8 sm:h-8"
+        className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
         fill="currentColor"
         viewBox="0 0 24 24"
       >
@@ -35,13 +35,12 @@ const socialLinks = [
       </svg>
     ),
   },
-  
   {
     name: "Instagram",
     url: "https://www.instagram.com/secret_agent_556?igsh=MTkwejh4MHpzNzB4bA==",
     icon: (
       <svg
-        className="w-6 h-6 sm:w-8 sm:h-8"
+        className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
         fill="currentColor"
         viewBox="0 0 24 24"
       >
@@ -54,7 +53,7 @@ const socialLinks = [
     url: `mailto:${DATA.contact.email}`,
     icon: (
       <svg
-        className="w-6 h-6 sm:w-8 sm:h-8"
+        className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -72,13 +71,17 @@ const socialLinks = [
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-8 sm:py-10 scroll-mt-24 px-4 sm:px-8 md:px-16 lg:px-24">
+    <section
+      id="contact"
+      className="py-6 sm:py-10 md:py-14 scroll-mt-24 px-4 sm:px-6 md:px-12 lg:px-24"
+    >
       <BlurFade delay={BLUR_FADE_DELAY}>
-        <div className="max-w-6xl mx-auto backdrop-blur-md bg-white/5 border border-white/10 rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 border-l-4 border-red-600 pl-3 sm:pl-4 text-white">
+        <div className="max-w-6xl mx-auto backdrop-blur-md bg-white/5 border border-white/10 rounded-xl sm:rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-10">
+          <h2 className="text-xl sm:text-2xl md:text-4xl font-bold mb-4 sm:mb-6 border-l-4 border-red-600 pl-3 sm:pl-4 text-white">
             Get In Touch
           </h2>
-          <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6 sm:mb-8">
+
+          <p className="text-sm sm:text-base md:text-lg leading-relaxed text-gray-300 mb-6 sm:mb-8">
             Feel free to reach out to me for any opportunities, collaborations,
             or just to say hello. I&apos;m always open to discussing new
             projects and ideas.
@@ -92,7 +95,7 @@ export default function ContactSection() {
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 sm:p-4 rounded-xl bg-slate-800/50 text-gray-400 border border-slate-700 hover:bg-red-600/20 hover:text-white hover:border-red-500/50 hover:scale-110 transition-all duration-300"
+                className="p-2.5 sm:p-3 md:p-4 rounded-xl bg-slate-800/50 text-gray-400 border border-slate-700 hover:bg-red-600/20 hover:text-white hover:border-red-500/50 hover:scale-110 transition-all duration-300"
                 aria-label={social.name}
               >
                 {social.icon}
