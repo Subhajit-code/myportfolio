@@ -12,7 +12,7 @@ const Heropage = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center py-12 sm:py-16 px-4 sm:px-8 md:px-16 lg:px-24 overflow-x-hidden"
+      className="relative min-h-screen flex items-center pt-[110px] sm:pt-0 py-12 sm:py-16 px-4 sm:px-8 md:px-16 lg:px-24 overflow-x-hidden"
     >
       {/* Particles Background */}
       <div className="absolute inset-0 z-0 w-full h-full">
